@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: aliceblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    height: 80px;
+}
+
+section {
+    flex: 1;
+    display: flex;
+}
+
+aside {
+    background-color: white;
+    width: 80px;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+}
