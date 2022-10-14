@@ -17,6 +17,8 @@ header {
     background-color: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     height: 80px;
+
+    display: flex;
 }
 
 section {
@@ -32,4 +34,15 @@ aside {
 main {
     flex: 1;
     padding: 30px;
+}
+
+.brand {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand img {
+    width: 30%;
 }
