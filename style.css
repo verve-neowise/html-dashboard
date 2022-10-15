@@ -46,3 +46,76 @@ main {
 .brand img {
     width: 30%;
 }
+
+.header-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 0px 30px;
+}
+
+.search {
+    display: flex;
+    align-items: stretch;
+}
+
+.search-input {
+    background-color: aliceblue;
+    padding: 10px 20px;
+}
+
+.search-input .icon {
+    color: rgb(142, 142, 142);
+}
+
+.search-input input {
+    width: 300px;
+    border: none;
+    background: none;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.search-btn {
+    background-color: rgb(29, 79, 241);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.5s 0s ease;
+}
+
+.search-btn:hover {
+    background-color: rgb(20, 57, 182);
+    cursor: pointer;
+}
+
+.search-btn:active {
+    transform: scaleY(0.95);
+}
+
+.item {
+    position: relative;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.5s 0s ease;
+}
+
+.badge {
+    position: absolute;
+    background-color: crimson;
+    width: 5px;
+    height: 5px;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+}
+
+.item:hover {
+    background-color: aliceblue;
+}
