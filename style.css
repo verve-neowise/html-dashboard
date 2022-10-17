@@ -29,6 +29,10 @@ section {
 aside {
     background-color: white;
     width: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 main {
@@ -118,4 +122,87 @@ main {
 
 .item:hover {
     background-color: aliceblue;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    padding: 20px;
+    text-align: center;
+    color: #b4b4b4;
+    transition: all 0.5s 0s ease;
+}
+
+.nav-item:hover {
+    color: rgb(71, 106, 220);
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.nav-item.active {
+    color: rgb(71, 106, 220);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.card-icon {
+    padding: 10px;
+    font-size: 32px;
+    color: rgb(120, 158, 242);
+    background-color: rgba(120, 159, 242, 0.186);
+}
+
+.card.green .card-icon {
+    background-color: rgba(153, 205, 50, 0.186);
+    color: yellowgreen;
+}
+
+.card-title {
+    color: #b4b4b4;
+}
+
+.card-value {
+    font-size: 46px;
+}
+
+.card hr {
+    width: 100%;
+    border: 1px solid #b4b4b47a;
+}
+
+.card-footer {
+    color: #b4b4b4;
+}
+
+.card-footer a {
+    color: rgb(71, 106, 220);
+}
+
+.card::after {
+    content: '';
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: url('./assets/pngegg\ \(3\).png');
+    background-size: cover;
 }
